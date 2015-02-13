@@ -13,3 +13,5 @@ sqlite_to_postgres.py
 dump/
 .DS_Store
 .env*
+
+article.html.haml
