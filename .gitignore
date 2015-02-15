@@ -14,4 +14,4 @@ dump/
 .DS_Store
 .env*
 
-article.html.haml
+_article.html.haml
