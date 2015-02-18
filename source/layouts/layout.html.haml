@@ -13,10 +13,25 @@
   %body{class:page_classes}
     %main.container
       %header
+        .issue-number
+          No. 
+          %var 1
         %h1 
           %span.small the
           Impermanent Marker
-        %h2.subtitle
+        %h2.mission
+          Short-form temporary writing on the ephemeral and obsolescant. Exploring impermanence one piece at a time.
 
       %article
+        %header 
         = yield
+
+      / TODO:
+      / %section.past-authors
+
+    %footer
+      Interested in writing for the impermanent marker? 
+      %a{href:"mailto:delete@impermanentmarker.com"} Drop us a line
+      %a{href:"/archive.html", data:{modal:"#archive-modal"}} Archive
+      %a{href:"/faq.html"}
+        %small FAQ
