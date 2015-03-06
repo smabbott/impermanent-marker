@@ -158,9 +158,20 @@ a{
   width:$hr-width;
 
   var{
+    font-family:'Nova Mono', monospace;
     font-style: initial;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: normal;
     line-height: 1.5rem;
   }
+}
+
+.strike{
+  background-image:url('/images/strike.gif');
+}
+
+.nav a{
+  font-size:0.75rem;
+  text-transform:uppercase;
+  letter-spacing:0.1rem;
 }
