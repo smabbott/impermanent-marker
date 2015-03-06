@@ -1,0 +1,166 @@
+// VARIABLES
+
+$highlight-color:white;
+$light-color: #fefbe9;
+$dark-color: #313d53;
+$hr-width: 80px;
+
+/*********************************/
+
+// UTILITY
+
+.hidden{
+  display:none;
+}
+
+.right{
+  float:right;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+/*********************************/
+
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* 2 */
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color:$light-color;
+  color:$dark-color;
+}
+
+main{
+  margin-top:2*$leading;
+}
+
+article{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right:$hr-width;
+  margin-bottom:3rem;
+
+  h1{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height:1.25rem;
+  }
+
+  p{
+    font-size:0.75rem;
+    line-height:1.25rem;
+  }
+}
+
+footer{
+  padding-top:1rem;
+}
+
+.columns{
+  -webkit-columns: 300px 2;
+  -moz-columns: 300px 2;
+  columns: 300px 2;
+}
+
+header{
+  h1{
+    margin-right:$hr-width;
+  }
+}
+
+
+h2{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+  font-weight: 200;
+  margin-right: 33%;
+}
+
+hr{
+  border:none;
+  background-color:$dark-color;
+  width:$hr-width;
+  position:absolute;
+  right:0;
+  &.thin{
+    height:3px;
+  }
+  &.thick{
+    height:10px;
+  }
+}
+
+a{
+  text-decoration:none;
+  &:hover{
+    text-decoration:line-through;
+  }
+}
+
+
+
+//////////////////////////////////
+
+.list-unstyled{
+  list-style-type:none;
+  margin-left:0;
+  padding-left:0;
+}
+
+.list-inline li{
+  display:inline-block;
+  margin-left:0;
+  padding-left:0;
+  margin-right:1rem;
+  // border-top:3px solid $light-color;
+}
+
+.dark-color{
+  background-color:$dark-color;
+  color:$light-color;
+
+  a{
+    color: $light-color;
+  }
+
+  hr{
+    background-color:$light-color;
+  }
+}
+
+.container{
+  max-width:80%;
+  min-width:300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.issue-number{
+  text-align:center;
+  display:block;
+  background-color:$dark-color;
+  color:$light-color;
+  padding:0.01em 0.3em 0.1em;
+  font-weight:400;
+  text-transform:uppercase;
+  position:absolute;
+  right:0;
+  width:$hr-width;
+
+  var{
+    font-style: initial;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+}
