@@ -4,6 +4,8 @@ $highlight-color:white;
 $light-color: #fefbe9;
 $dark-color: #313d53;
 $hr-width: 80px;
+$footer-height:$leading*5;
+$monospace:'PT Mono', monospace;
 
 /*********************************/
 
@@ -33,10 +35,21 @@ $hr-width: 80px;
 html, body{
   background-color:$light-color;
   color:$dark-color;
+  height:100%;
 }
 
 main{
   margin-top:2*$leading;
+
+  // Sticky footer support
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: $footer-height; 
+  &:after {
+    content: "";
+    display: block;
+  }
+    
 }
 
 article{
@@ -49,20 +62,40 @@ article{
   margin-right:$hr-width;
   margin-bottom:3rem;
 
-  h1{
-    font-size: 1rem;
-    font-weight: 700;
-    line-height:1.25rem;
-  }
-
-  p{
-    font-size:0.75rem;
-    line-height:1.25rem;
+  header{
+    margin-bottom:$leading;
+    h1{
+      font-size: 1rem;
+      font-weight: 700;
+      line-height:1.25rem;
+      margin-bottom:0;
+    }
+    .byline{
+      font-size:0.75rem;
+      font-family:$monospace;
+    }
+    address{
+      font-style:normal;
+    }
   }
 }
 
+article p, footer p{
+  font-size:0.75rem;
+  line-height:1.25rem;
+}
+
 footer{
+
   padding-top:1rem;
+  height: $footer-height; 
+  hr{
+    margin-top:0;
+  }
+  .nav a:hover{
+    color:$dark-color;
+    background-color:white;
+  }
 }
 
 .columns{
@@ -87,6 +120,7 @@ h2{
 }
 
 hr{
+  margin-top:-$leading;
   border:none;
   background-color:$dark-color;
   width:$hr-width;
@@ -104,7 +138,19 @@ a{
   text-decoration:none;
   &:hover{
     text-decoration:line-through;
+    color:white;
   }
+}
+
+p a{
+  border-bottom:1px dotted $dark-color;
+  &:hover{
+    border-bottom:none;
+  }
+}
+
+.dark-color p a{
+  border-bottom-color:$light-color;
 }
 
 
@@ -146,32 +192,84 @@ a{
 }
 
 .issue-number{
+  margin-top:-$leading;
   text-align:center;
   display:block;
   background-color:$dark-color;
   color:$light-color;
-  padding:0.01em 0.3em 0.1em;
-  font-weight:400;
+  padding:0.05em 0.3em 0.1em;
+  font-weight:700;
   text-transform:uppercase;
   position:absolute;
   right:0;
   width:$hr-width;
+  height:34px;
 
   var{
-    font-family:'Nova Mono', monospace;
+    font-family:$monospace;
     font-style: initial;
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5rem;
   }
+
+  &.navicable{
+    &:hover{
+
+      background-color:transparent;
+      font-weight:400;
+      &:before{
+        content: "";
+        border-right: 17px solid #313d53;
+        display: block;
+        position: absolute;
+        left: 0;
+        top:0;
+        border-top: 17px solid transparent;
+        border-bottom: 17px solid transparent;
+      }
+      &:after {
+        content: "×";
+        display: block;
+        position: absolute;
+        background-color: #313d53;
+        width: 79%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        box-sizing: border-box;
+        font-size: 2rem;
+        line-height: 1.4rem;
+      }
+      .unit{
+        display:none;
+      }
+    }
+    a{
+      display:block;
+      width:100%;
+      height:100%;
+      z-index:1;
+      left:0.05em;
+      position:absolute;
+    }
+  }
 }
+
 
 .strike{
   background-image:url('/images/strike.gif');
+  background-size:contain;
 }
 
 .nav a{
-  font-size:0.75rem;
+  // font-size:0.75rem;
+  font-size:0.6rem;
   text-transform:uppercase;
   letter-spacing:0.1rem;
+  font-weight:700;
+
 }
+
+
+// MEDIA QUERIES

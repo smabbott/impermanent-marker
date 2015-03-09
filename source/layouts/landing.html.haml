@@ -16,13 +16,18 @@
     %main.container
       %header
         .clearfix
-          .issue-number.navicable.right.dark-color
-            %a{href:"/index.html"} 
-              %span.unit TIM 
-              %var
+          .issue-number.right
+            %span.unit No.
+            %var 0
+        %h1
+          <span class="strike"> the  </span>
+          <span class="strike">  Impermanent  </span>
+          <span class="strike">  Marker</span>
+        %hr.thin
+        %h2.mission
+          Short-form, temporary writing on ephemeral and obsolescent things. Exploring impermanence one piece at a time.
 
-        / %h1
-        / %hr.thick
+      %hr.thick
 
       %article
         %header 
@@ -33,15 +38,4 @@
       / TODO:
       / %section.past-authors
 
-    %footer.dark-color
-      .container
-        %ul.list-unstyled.list-inline.nav
-          %li
-            %a{href:"mailto:delete@impermanentmarker.com"} Contact
-          %li
-            %a{href:"/archive.html", data:{modal:"#archive-modal"}} Archive
-          %li            
-            %a{href:"/faq.html"} FAQ
-        %p
-          Interested in writing for the impermanent marker? 
-          %a{href:"mailto:delete@impermanentmarker.com"} Drop us a line
+    =partial 'footer'

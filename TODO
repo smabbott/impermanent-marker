@@ -1,16 +1,17 @@
 V0
 -----------------------------------------
-. sticky footer
+o sticky footer
 . footer nav is smaller and more compact
 . body copy is smaller
-. mini-layout for non-article pages
-  . no mission
-  . TIM where issue # now sits
-  . TIM is navigation
-  . nav rollover is delete symbol
+✓ mini-layout for non-article pages
+  ✓ no mission
+  ✓ TIM where issue # now sits
+  ✓ TIM is navigation
+  ✓ nav rollover is delete symbol
 . animate rules
 . authorship
 
 V1
 -----------------------------------------
 . past authors
+. colophon
