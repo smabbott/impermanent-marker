@@ -8,26 +8,30 @@
     
     %title The Impermenant Marker
     
-    %link{:href => "http://fonts.googleapis.com/css?family=PT+Mono|Raleway:100,200,400,700", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=PT+Mono|Source+Sans+Pro:200,300,400,700", :rel => "stylesheet", :type => "text/css"}
     = stylesheet_link_tag "all"
     = javascript_include_tag  "all"
   
   %body{class:page_classes}
     %main.container
       %header
-        .clearfix
-          .issue-number.right
-            %span.unit No.
-            %var 0
-        %h1
+        %hr.thick
+        %h1.logotype
+          / .logo
+          %img{src:'images/impermanent-mark.png'}
+          %br 
           <span class="strike"> the  </span>
           <span class="strike">  Impermanent  </span>
           <span class="strike">  Marker</span>
         %hr.thin
+
         %h2.mission
           Short-form, temporary writing on ephemeral and obsolescent things. Exploring impermanence one piece at a time.
-
-      %hr.thick
+      
+      .clearfix
+        .issue-number.right
+          %span.unit N<sup>o</sup>.
+          %var 0
 
       %article
         %header 
@@ -35,7 +39,8 @@
 
       %hr.thick
 
+
       / TODO:
       / %section.past-authors
-
+    
     =partial 'footer'

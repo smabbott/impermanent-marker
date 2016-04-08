@@ -2,16 +2,18 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.3.7"
+gem 'middleman' #, '>= 4.0.0'
+gem 'middleman-livereload'
+# gem 'middleman-compass', '>= 4.0.0'
+gem "middleman-sprockets" #, "~> 4.0.0.rc"
 
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+# gem 'dotenv', '~> 2.1'
 
-# For faster file watcher updates on Windows:
-gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
-
-# Windows does not come with time zone data
-gem "tzinfo-data", platforms: [:mswin, :mingw]
-
-# For deploying to S3
+# Deploying to S3
+gem 'middleman-aws'
+# Even though already required by the middleman-aws gem, it appears middleman does not
+#   pick up transitive dependency extensions early enough  to avoid the
+#   "== Unknown Extension:" error.  Add these to your main project
+#   (I wish this was unnecessary but don't know how to work around it)
 gem 'middleman-s3_sync'
+gem 'middleman-cloudfront'

@@ -13,5 +13,8 @@ sqlite_to_postgres.py
 dump/
 .DS_Store
 .env*
+.aws
+.aws/*
 
 _article.html.haml
+credentials.csv
