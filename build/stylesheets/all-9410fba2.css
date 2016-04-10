@@ -1,0 +1,753 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 10, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 34, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 68, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 90, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 170, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 174, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 222, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 253, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 267, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 323, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 380, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 391, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 400, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 409, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 420, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, /Personal/Projects/ImpermanentMarker/source/stylesheets/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+/* line 13, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+html {
+  /* Change default typefaces here */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 137.5%;
+  -webkit-font-smoothing: antialiased; }
+
+/* Copy & Lists */
+/* line 27, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+p {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0; }
+
+/* line 33, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+ul, ol {
+  margin-bottom: 1.5rem;
+  margin-top: 0; }
+  /* line 36, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+  ul li, ol li {
+    line-height: 1.5rem; }
+  /* line 39, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+  ul ul, ul ol, ol ul, ol ol {
+    margin-top: 0;
+    margin-bottom: 0; }
+
+/* line 45, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+/* Headings */
+/* line 52, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+h1, h2, h3, h4, h5, h6 {
+  /* Change heading typefaces here */
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  line-height: 1.5rem; }
+
+/* line 61, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-bottom: 3rem; }
+
+/* line 67, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-bottom: 3rem; }
+
+/* line 73, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+h3 {
+  font-size: 1.414rem; }
+
+/* line 77, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+h4 {
+  font-size: 0.707rem; }
+
+/* line 81, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+h5 {
+  font-size: 0.47133rem; }
+
+/* line 85, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+h6 {
+  font-size: 0.3535rem; }
+
+/* Tables */
+/* line 90, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+table {
+  margin-bottom: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse; }
+  /* line 94, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+  table td, table th {
+    padding: 0;
+    line-height: 33px; }
+
+/* Code blocks */
+/* line 101, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+code {
+  vertical-align: bottom; }
+
+/* Leading paragraph text */
+/* line 107, /Personal/Projects/ImpermanentMarker/source/stylesheets/_typebase.scss */
+.lead {
+  font-size: 1.414rem; }
+
+/*********************************/
+/* line 14, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.hidden {
+  display: none; }
+
+/* line 18, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.right {
+  float: right; }
+
+/* line 22, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
+
+/*********************************/
+/* line 29, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* 2 */
+  box-sizing: border-box; }
+
+/* line 35, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+html, body {
+  background-color: #fefbe9;
+  color: #313d53;
+  height: 100%; }
+
+/* line 41, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+main {
+  margin-top: 3rem;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: 7.5rem; }
+  /* line 48, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  main:after {
+    content: "";
+    display: block; }
+
+/* line 55, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+article {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 0;
+  margin-bottom: 3rem; }
+  /* line 66, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  article header {
+    margin-bottom: 1.5rem; }
+    /* line 68, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+    article header h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      margin-bottom: 0; }
+    /* line 74, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+    article header .byline {
+      font-size: 0.75rem;
+      font-family: "PT Mono", monospace; }
+    /* line 78, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+    article header address {
+      font-style: normal; }
+
+/* line 84, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+article p, footer p {
+  font-size: 0.8rem;
+  line-height: 1.1rem; }
+
+/* line 91, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+footer {
+  padding-top: 1rem;
+  height: 7.5rem; }
+  /* line 95, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  footer hr {
+    margin-top: 0; }
+  /* line 98, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  footer .nav a:hover {
+    color: #313d53;
+    background-color: white; }
+
+/* line 104, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.columns {
+  -webkit-columns: 300px 2;
+  -moz-columns: 300px 2;
+  columns: 300px 2; }
+
+/* line 110, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.column {
+  width: 50%; }
+
+/* line 115, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+header h1.logotype {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 auto; }
+
+/* line 124, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+h2 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+  font-weight: 200;
+  margin-right: 33%; }
+  /* line 130, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  h2.mission {
+    text-align: center;
+    margin: 0 auto 4rem auto;
+    max-width: 800px; }
+
+/* line 138, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+hr {
+  margin-top: 0;
+  border: none;
+  background-color: #313d53;
+  width: 80px;
+  position: absolute;
+  right: 0; }
+  /* line 146, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  hr.thin {
+    height: 3px; }
+  /* line 149, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  hr.thick {
+    height: 10px; }
+
+/* line 154, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+a {
+  text-decoration: none; }
+  /* line 156, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  a:hover {
+    text-decoration: line-through;
+    color: #313d53;
+    cursor: pointer; }
+
+/* line 163, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+p a {
+  border-bottom: 1px dotted #313d53; }
+  /* line 165, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  p a:hover {
+    border-bottom: none; }
+
+/* line 170, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.dark-color p a {
+  border-bottom-color: #fefbe9; }
+  /* line 172, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  .dark-color p a:hover {
+    color: white; }
+
+/* line 177, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+sup {
+  top: -0.25em; }
+
+/* line 183, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.list-unstyled {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+/* line 189, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.list-inline li {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 1rem; }
+
+/* line 197, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.dark-color {
+  background-color: #313d53;
+  color: #fefbe9; }
+  /* line 201, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  .dark-color a {
+    color: #fefbe9; }
+  /* line 205, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  .dark-color hr {
+    background-color: #fefbe9; }
+
+/* line 210, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.container {
+  max-width: 80%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 217, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.issue-number {
+  margin-top: -1.5rem;
+  text-align: center;
+  display: block;
+  background-color: #313d53;
+  color: #fefbe9;
+  padding: 0.05em 0.3em 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  width: 80px;
+  height: 34px; }
+  /* line 231, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  .issue-number var {
+    font-family: "PT Mono", monospace;
+    font-style: initial;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem; }
+  /* line 240, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  .issue-number.navicable:hover {
+    background-color: transparent;
+    font-weight: 400; }
+    /* line 244, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+    .issue-number.navicable:hover:before {
+      content: "";
+      border-right: 17px solid #313d53;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent; }
+    /* line 254, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+    .issue-number.navicable:hover:after {
+      content: "×";
+      display: block;
+      position: absolute;
+      background-color: #313d53;
+      width: 79%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      box-sizing: border-box;
+      font-size: 2rem;
+      line-height: 1.4rem; }
+    /* line 267, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+    .issue-number.navicable:hover .unit {
+      display: none; }
+  /* line 271, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+  .issue-number.navicable a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0.05em;
+    position: absolute; }
+
+/* line 283, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.strike {
+  background-size: contain; }
+
+/* line 288, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.nav a {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 700; }
+
+/* line 297, /Personal/Projects/ImpermanentMarker/source/stylesheets/_custom.scss */
+.logo {
+  width: 200px;
+  height: 200px;
+  background-color: #313d53;
+  border-radius: 50%; }
